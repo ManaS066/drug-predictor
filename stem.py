@@ -4,10 +4,6 @@ import numpy as np
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder, LabelEncoder
 from sklearn.ensemble import RandomForestClassifier
-def local_css(file_name):
-    with open(file_name) as f:
-        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
-local_css("style.css")
 # Load the CSV file into a DataFrame
 df = pd.read_csv('drug200.csv')  # Replace 'drug200.csv' with your actual CSV file path
 
